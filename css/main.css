@@ -44,11 +44,12 @@ li {
 }
 
 .icon__linc {
-  border-radius: 100%;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   fill: #AFB1B8;
+  background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
   height: 44px;
   padding: 12px;
@@ -613,6 +614,7 @@ li {
 .footer__social {
   margin-left: 70px;
   margin-top: 12px;
+  border-radius: 50%;
 }
 .footer__social > .icon__linc {
   fill: #ffffff;
