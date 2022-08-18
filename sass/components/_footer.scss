@@ -1,6 +1,6 @@
 /*-- Футер -- */
 .footer {
-    background-color: var($hero-background-color);
+    background-color: $hero-background-color;
     margin-left: auto;
     margin-right: auto;
     width: 1600px;
@@ -12,26 +12,30 @@
 }
 
 .footer__header {
-    color: var($primary-white-color);
+    color: $primary-white-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.17;
     margin-bottom: 20px;
-
 }
 
-.footer__adress {
+.footer__address {
     margin-top: 20px;
     margin-bottom: 9px;
 }
 .footer__item {
-    color: var($primary-white-color);
+    color: $primary-white-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     font-style: normal;
+&:hover,
+&:focus {
+        color: $accent-color;
 }
+}
+
 .footer__mail {
     margin-bottom: 9px;
 }
@@ -48,24 +52,20 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus {
-        color: var($accent-color);
+        color: $accent-color;
 }
 }
 
 .footer__social {
     margin-left: 70px;
     margin-top: 12px;
+&>.icon__linc {
+        fill: $primary-white-color;
+        background-color: rgba(255, 255, 255, 0.1);
+}
 }
 
-.footer__social>.icon__linc {
-    fill: var($primary-white-color);
-    background-color: rgba(255, 255, 255, 0.1);
-}
 
-.team__social>.icon__linc:hover,
-.team__social>.icon__linc:focus {
-    background-color: var($accent-color);
-}
 
 /* Форма запроса футера */
 
@@ -75,18 +75,22 @@
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.06em;
-    color: var($primary-white-color);
+    color: $primary-white-color;
     text-transform: uppercase;
     margin-left: 53px;
     margin-top: 12px;
 }
 
-.footer__fieldhead input {
+.footer__fieldhead {
+    display: inline-flex;
+    margin-top: 20px;
+& input {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
 }
 
 .footer__subscribe {
@@ -99,13 +103,13 @@
     letter-spacing: 0.06em;
     padding: 10px 28px;
     border-radius: 4px;
-    background-color: var($accent-color);
-    color: var($primary-white-color);
+    background-color: $accent-color;
+    color: $primary-white-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-color: var($accent-color);
+    border-color: $accent-color;
     align-items: center;
     text-align: center;
-    fill: var($primary-white-color);
+    fill: $primary-white-color;
     margin-left: 10px;
     cursor: pointer;
 
@@ -114,7 +118,18 @@
     }
 }
 
-.footer__sub  {
+/* .footer__sub  {
     display: inline-flex;
     margin-top: 20px;
+} */
+
+input#email {
+    padding: 15px 16px;
+    height: 50px;
+    width: 358px;
+    color: $primary-white-color;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 }

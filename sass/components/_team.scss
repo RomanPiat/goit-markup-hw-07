@@ -3,16 +3,6 @@
     padding-bottom: 50px;
 }
 
-.team__head,
-.activity-header {
-    color: var($head-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-
 .team__list {
     display: flex;
     flex-wrap: nowrap;
@@ -20,7 +10,7 @@
 }
 .team__item {
     width: 270px;
-    background-color: var($primary-white-color);
+    background-color: $primary-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -38,7 +28,7 @@
 }
 
 .team__header {
-    color: var($head-text-color);
+    color: $head-text-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -49,7 +39,7 @@
 }
 
 .team__text {
-    color: var($portfolio-text-color);
+    color: $primary-text-color;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -65,4 +55,9 @@
     gap: 10px;
     padding-bottom: 30px;
     justify-content: center;
+&>.icon__linc:hover,
+&>.icon__linc:focus {
+        background-color: $accent-color;
 }
+}
+

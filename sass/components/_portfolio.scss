@@ -6,8 +6,8 @@
 }
 
 .portfolio__radio {
-    background-color: var($button-background-color);
-    color: var($head-text-color);
+    background-color: $button-background-color;
+    color: $head-text-color;
     border: none;
     border-radius: 4px;
     font-weight: 500;
@@ -21,8 +21,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus {
-        color: var($primary-white-color);
-        background-color: var($accent-color);
+        color: $primary-white-color;
+        background-color: $accent-color;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
             0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -37,7 +37,7 @@
 }
 
 .portfolio__title {
-    color: var($head-text-color);
+    color: $head-text-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -47,7 +47,7 @@
 }
 
 .portfolio__text {
-    color: var($portfolio-text-color);
+    color: $primary-text-color;
     font-size: 16px;
     line-height: 1.87;
     text-align: left;
@@ -56,7 +56,7 @@
 
 .portfolio__figure {
     width: 370px;
-    background-color: var($primary-white-color);
+    background-color: $primary-white-color;
     margin: 0;
     box-sizing: content-box;
 & img {
@@ -65,7 +65,7 @@
 }
 
 .portfolio__caption {
-    border: 1px solid var($border-color);
+    border: 1px solid $border-color;
     border-top: transparent;
     padding: 20px 24px;
 }
@@ -84,7 +84,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 1.55;
-    color: var($primary-white-color);
+    color: $primary-white-color;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

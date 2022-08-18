@@ -2,8 +2,8 @@
     padding: 24px 15px 25px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid var($border-color);
-    background-color: var($primary-white-color);
+    border-bottom: 1px solid $border-color;
+    background-color: $primary-white-color;
 }
 .header__nav {
     display: flex;
@@ -14,8 +14,9 @@
     align-items: center;
 }
 
+
 .header__link {
-    color: var($head-text-color);
+    color: $head-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -26,8 +27,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus {
-        color: var($accent-color);
-        fill: var($accent-color);
+        color: $accent-color;
+        fill: $accent-color;
 }
 }
 
@@ -46,20 +47,20 @@
     margin-left: auto;
 }
 .header__telmail {
-    color: var($primary-text-color);
+    color: $primary-text-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     align-items: center;
-    fill: var($primary-text-color);
+    fill: $primary-text-color;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus {
-        color: var($accent-color);
-        fill: var($accent-color);
+        color: $accent-color;
+        fill: $accent-color;
 }
 }
 
@@ -73,6 +74,7 @@
     vertical-align: middle;
 }
 
+
 /* Подчеркивание активной страницы */
 .header__current::after {
     content: "";
@@ -80,7 +82,7 @@
     position: absolute;
     left: 0;
     height: 4px;
-    background-color: var($accent-color);
+    background-color: $accent-color;
     border-radius: 2px;
     display: block;
     bottom: -30px;

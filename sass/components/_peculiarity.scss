@@ -7,7 +7,7 @@
 }
 
 .peculiarity__header {
-    color: var($head-text-color);
+    color: $head-text-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -25,7 +25,7 @@
 .peculiarity__icon {
     display: flex;
     height: 120px;
-    background-color: var($button-background-color);
+    background-color: $button-background-color;
     border-radius: 4px;
     align-items: center;
     margin-bottom: 30px;

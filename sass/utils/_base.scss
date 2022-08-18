@@ -23,9 +23,9 @@ li {
 
 .body {
     font-family: Roboto, sans-serif;
-    color: var($primary-text-color);
+    color: $primary-text-color;
     letter-spacing: 0.03em;
-    background-color: var($primary-white-color);
+    background-color: $primary-white-color;
 }
 
 /* убираем точки списков */
@@ -42,7 +42,7 @@ li {
 .icon__linc {
     border-radius: 100%;
     display: flex;
-    fill: var($icon-color);
+    fill: $icon-color;
     width: 44px;
     height: 44px;
     padding: 12px;
@@ -52,7 +52,7 @@ li {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus {
-        fill: var($primary-white-color);
+        fill: $primary-white-color;
         cursor: pointer;
 }
 }
@@ -60,4 +60,13 @@ li {
 .flex {
     display: flex;
     justify-content: flex-start;
+}
+
+.topic {
+        color: $head-text-color;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+            text-align: center;
 }

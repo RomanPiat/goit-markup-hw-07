@@ -1,7 +1,7 @@
 /* Логотип верхний */
 .logo__top {
-    color: var($accent-color);
-    font-family: "$secondaryFont", sans-serif;
+    color: $accent-color;
+    font-family: $secondaryFont, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -9,13 +9,13 @@
 }
 
 .logo-black {
-    color: var($logo-black-color);
+    color: $logo-black-color;
 }
 
 /* Логотип нижний */
 .logo__bottom {
-    color: var($accent-color);
-    font-family: "$secondaryFont", sans-serif;
+    color: $accent-color;
+    font-family: $secondaryFont, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -24,5 +24,9 @@
 }
 
 .logo-white {
-    color: var($primary-white-color);
+    color: $primary-white-color;
+}
+
+.logo-black {
+    columns: 1;
 }
