@@ -55,9 +55,9 @@
     gap: 10px;
     padding-bottom: 30px;
     justify-content: center;
-&>.icon__linc:hover,
-&>.icon__linc:focus {
+    &>.icon__linc:hover,
+    &>.icon__linc:focus {
         background-color: $accent-color;
-}
+    }
 }
 

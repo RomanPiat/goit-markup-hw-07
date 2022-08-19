@@ -1,5 +1,5 @@
 /* Логотип верхний */
-.logo__top {
+.logo {
     color: $accent-color;
     font-family: $secondaryFont, sans-serif;
     font-weight: 700;
@@ -12,21 +12,6 @@
     color: $logo-black-color;
 }
 
-/* Логотип нижний */
-.logo__bottom {
-    color: $accent-color;
-    font-family: $secondaryFont, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    padding-bottom: 20px;
-    margin-right: 93px;
-}
-
 .logo-white {
     color: $primary-white-color;
-}
-
-.logo-black {
-    columns: 1;
 }
